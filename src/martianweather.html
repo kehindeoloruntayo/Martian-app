@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>Martian Explorer</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Martian Explorer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./martianweather.html">Martian Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./rover.html">Mars Rover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./apod.html">APOD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <section id="weather">
+                <h2>Martian Weather</h2>
+                <main class="mars-current-weather">
+                    <h1 class="main-title">Latest weather at Elysium Planitia</h1>
+
+                    <div class="date">
+                        <h2 class="section-title section-title--date">
+                            Sol
+                            <span data-current-sol>375</span>
+                        </h2>
+                        <p class="date__day" data-current-date></p>
+                    </div>
+
+                    <div class="temp">
+                        <h2 class="section-title">Temperature</h2>
+                        <p class="reading">
+                            High:
+                            <span data-current-temp-high></span>
+                            °<span data-temp-unit></span>
+                        </p>
+                        <p class="reading">
+                            Low:
+                            <span data-current-temp-low></span>
+                            °<span data-temp-unit></span>
+                        </p>
+                    </div>
+
+                    <div class="wind">
+                        <h2 class="section-title">Wind</h2>
+                        <p class="reading">
+                            <span data-wind-speed></span>
+                            <span data-speed-unit></span>
+                        </p>
+
+                        <div class="wind__direction">
+                            <p class="sr-only" data-wind-direction-text></p>
+                            <div class="wind__arrow" data-wind-direction-arrow></div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <p>InSight is taking daily weather measurements (temperature, wind, pressure) on the surface of
+                            Mars at Elysium Planitia, a flat, smooth plain near Mars' equator.</p>
+                        <p>This is only a part of InSight's mission. <a
+                                href="https://mars.nasa.gov/insight/mission/overview/">Click here</a> to find out more.
+                        </p>
+                    </div>
+                </main>
+            </section>
+        </main>
+    </div>
+    <div class="footer-main" data-background="assets/img/shape/footer_bg.png">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="" alt=""></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">221B Baker Street, P.O Box 353 Park <br> Road, USA - 215431</p>
+                                        <p class="info2">Kehindeoloruntayo1@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="https://www.facebook.com/kehinde.oloruntayo.3"><i
+                                            class="bi bi-facebook"></i></a>
+                                    <a href="https://twitter.com/KennyOloruntayo"><i class="bi bi-twitter"></i></a>
+                                    <a href="https://www.instagram.com/kehindeoloruntayo"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/oloruntayo-kehinde/"><i
+                                            class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="aboutUs.html">About</a></li>
+                                    <li><a href="aboutUs.html">Features</a></li>
+                                    <li><a href="single-blog.html">Pricing</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-7">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Support</h4>
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#"> Sitemap</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Report a bug</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Core Features</h4>
+                                <ul>
+                                    <li><a href="#">Email Marketing</a></li>
+                                    <li><a href="#"> Offline SEO</a></li>
+                                    <li><a href="#">Social Media Marketing</a></li>
+                                    <li><a href="#">Lead Generation</a></li>
+                                    <li><a href="#"> 24/7 Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
