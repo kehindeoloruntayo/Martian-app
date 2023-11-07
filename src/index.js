@@ -33,7 +33,6 @@ $(document).ready(function () {
         console.error("Error fetching Mars Rover images:", error);
       });
   }
-
   fetchMarsRoverImages();
 
   $("#load-more").on("click", function () {
@@ -41,15 +40,8 @@ $(document).ready(function () {
   });
 
   function updateAstronomyPictureOfTheDay() {
-    APOD.fetchAstronomyPicture(
-      function (response) {
-        //     $("#apod-image img").attr("src");
-        //     $("#apod-description").text(response.explanation);
-        //   },
-        //   function (error) {
-        //     console.log(error);
-        //   }
-        // );
+    APOD.fetchAstronomyPicture()
+      .then(function (response) {
         if (response.media_type === "image") {
           $("#apod-image img").attr("src", response.url);
         } else if (response.media_type === "video") {
@@ -60,14 +52,13 @@ $(document).ready(function () {
           $("#apod-image").empty().append(videoIframe);
         }
         $("#apod-description").text(response.explanation);
-      },
-      function (error) {
+      })
+      .catch(function (error) {
         console.log(error);
-      }
-    );
+      });
   }
   updateAstronomyPictureOfTheDay();
-
+  
   const currentPath = window.location.pathname;
   $('.nav-link').each(function() {
     if ($(this).attr('href') === currentPath) {
