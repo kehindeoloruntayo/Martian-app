@@ -34,28 +34,11 @@ module.exports = {
       outputReport: false
     }),
     new HtmlWebpackPlugin({
-      title: 'Martian App',
+      title: 'Meme Kombat',
       template: './src/index.html',
       inject: 'body'
     }),
-    new HtmlWebpackPlugin({
-      template: './src/apod.html',
-      filename: 'apod.html',
-      inject: 'body',
-      chunks : ['main']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/rover.html',
-      filename: 'rover.html',
-      inject: 'body',
-      chunks : ['main']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/martianweather.html',
-      filename: 'martianweather.html',
-      inject: 'body',
-      chunks : ['main']
-    })
+
   ],
   module: {
     rules: [
